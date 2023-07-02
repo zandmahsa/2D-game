@@ -21,6 +21,8 @@ You'll also lose hearts if you hit spikes, but there are hearts to collect to re
 
 At the start of the game, you have three hearts, but more can be found throughout the game.
 
+We downloaded the sprites used in this game from the https://craftpix.net/ website 
+
 Buildings in the game can teleport you ahead, but be careful not to turn back upon entering one. 
 
 Falling from the ground tiles will result in a game over.

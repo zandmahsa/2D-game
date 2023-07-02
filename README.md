@@ -1,8 +1,7 @@
 # The_leftovers
 We created a 2D game called "The Leftovers" using the Unity game engine. 
 <p align="center">
-  <img src="![3](https://github.com/zandmahsa/The_leftovers/assets/104939235/0cfcd68f-3980-49df-88dd-38706cb46c91)
-" width="350" title="hover text">
+  <img src="https://github.com/zandmahsa/The_leftovers/assets/104939235/0cfcd68f-3980-49df-88dd-38706cb46c91" width="350" title="hover text">
 </p>
 
 Upon launching the game, a menu will appear with instructions available in the help section.

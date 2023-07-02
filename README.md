@@ -61,7 +61,7 @@ We added another object called bubble for the player so that he can destroy the 
 
 We created a canvas to display the coins and hearts, we also created a sound for coins, spikes, hearts and shots.
 
-Using UI and Tex Mesh Renderer, we created a menu in a new scene. We divided the menu into two sections, the main menu and the help menu, and using settings and scripts, we determined what would happen and what would be displayed by clicking on each button.
+Using UI and Text Mesh Renderer, we created a menu in a new scene. We divided the menu into two sections, the main menu and the help menu, and using settings and scripts, we determined what would happen and what would be displayed by clicking on each button.
 
 
 

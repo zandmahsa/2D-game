@@ -1,4 +1,6 @@
 # The_leftovers
+
+<h1>Game instructions and descriptions</h1>
 We created a 2D game called "The Leftovers" using the Unity game engine. 
 
 Upon launching the game, a menu will appear with instructions available in the help section.
@@ -33,7 +35,7 @@ We downloaded the sprites used in this game from the https://craftpix.net/ websi
 
 
 
-
+<h1>Description of the project construction process</h1>
 
 In short, first we created the environment using tilemaps and the tile pallete window (also we created a clider for the ground and material to create and adjust the friction).
 We used tags for the ground and the player, we also gave a name to the ground layer so that we can use it in scripts.
@@ -49,5 +51,7 @@ We added another object called bubble for the player so that he can destroy the 
 We created a canvas to display the coins and hearts, we also created a sound for coins, spikes, hearts and shots.
 Using UI and Tex Mesh Renderer, we created a menu in a new scene. We divided the menu into two sections, the main menu and the help menu, and using settings and scripts, we determined what would happen and what would be displayed by clicking on each button.
 
-We didn't know that it is necessary to share all the steps of making the game with you, but inside the <h1>Documents and Pictures folder</h1>, we put pictures of the settings of all the objects in the game. Unfortunately, at the last minute, we decided to change the part of the project that was related to checkpoints.
-Anyway, we enjoyed making the game with all the challenges we had. We had many challenges in the animation for characters, coins, and giants, and still some challenges remain unsolved. I hope you enjoy playing our project.
+
+<h1>Documents and Pictures folder</h1>
+We didn't know that it is necessary to share all the steps of making the game with you, but inside the Documents and Pictures folder, we put pictures of the settings of all the objects in the game. Unfortunately, at the last minute, we decided to change the part of the project that was related to checkpoints.
+Anyway, we enjoyed making the game with all the challenges we had. We had many challenges in the animation for characters, coins, and giants, and still some challenges remain unsolved. I hope you enjoy playing our game.

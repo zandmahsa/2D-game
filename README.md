@@ -1,7 +1,7 @@
 # 3D game
 
 <h1>Game instructions and descriptions</h1>
-We created a 2D game called "The Leftovers" using the Unity game engine. 
+We created a 2D game called "The Leftovers" **I should change the name** using the Unity game engine. 
 
 Upon launching the game, a menu will appear with instructions available in the help section.
 

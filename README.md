@@ -1,71 +1,81 @@
-# 3D game
+# The Leftovers - 2D Game (Working Title)
 
-<h1>Game instructions and descriptions</h1>
-We created a 2D game called "The Leftovers" **I should change the name** using the Unity game engine. 
+## Game Overview
 
-Upon launching the game, a menu will appear with instructions available in the help section.
+**The Leftovers** is a 2D platformer developed using the Unity game engine, designed to challenge players with a range of enemies, obstacles, and environmental hazards. The objective is to navigate through dangerous environments, collect coins, and defeat enemies while avoiding traps and falls.
 
-Playing the game is easy. Use the arrow keys to move left or right and the spacebar to jump. 
+### Key Features:
+- **Player Controls**:
+  - Arrow keys for movement (left and right).
+  - Spacebar for jumping.
+  - Left mouse button for shooting bubbles to destroy enemies.
 
-Use the left mouse button to shoot bubbles that will destroy the giants. 
+- **Enemies & Obstacles**:
+  - Giants require two bubble hits to be defeated.
+  - Zombies send the player back to the start upon collision.
+  - Spikes decrease the player's health, but collectible hearts restore it.
 
-There is no limit to the number of bubbles that can be shot, but it takes two shots to destroy a giant. 
+- **Game Mechanics**:
+  - Collect coins scattered throughout the level. Gold chests provide 10 coins.
+  - Teleportation through certain buildings allows players to advance, though returning after entering can lead to challenges.
+  - Falling off platforms results in a game over.
 
-Pay attention to warning signs in the game that signal the presence of zombies, giants, and other dangers.
+- **Health & Power-ups**:
+  - The player starts with three hearts, and additional hearts can be found throughout the level.
 
-In the game, you must collect coins to progress. 
+Despite having only one level, the difficulty and variety of challenges provide an engaging and entertaining experience.
 
-Gold chests grant ten coins each. 
+> **Note**: All sprites used in the game were sourced from [CraftPix](https://craftpix.net/).
 
-If you encounter zombies, you will return to the start of the game.
+---
 
-You'll also lose hearts if you hit spikes, but there are hearts to collect to replenish them. 
+## Development Details
 
-At the start of the game, you have three hearts, but more can be found throughout the game.
+The environment was created using Unity’s **Tilemap** and **Tile Palette** tools, with colliders applied to ground tiles and friction adjusted through material settings. Layers and tags were used to manage different objects in the game, including player interactions with the environment.
 
+### Player Mechanics & Animations
+The player character is designed with smooth movement and jumping mechanics. Early challenges with sliding were addressed by fine-tuning the physics via custom scripts. Animations for walking, jumping, and attacking were added to enhance gameplay immersion.
 
-Buildings in the game can teleport you ahead, but be careful not to turn back upon entering one. 
+### Collectibles & Scoring System
+Coins and chests were implemented to give players objectives as they progress through the level. The chest object was scripted to provide additional rewards, and a sound effect was added to enhance the feedback for collecting items.
 
-Falling from the ground tiles will result in a game over.
+### Camera & Object Layering
+Camera movement was optimized using custom scripts to follow the player's movement while maintaining smooth transitions. The **Sprite Renderer** was used to layer the background, player, and other objects, ensuring visual clarity and an organized layout.
 
-Although there is only one level, the game is exciting and challenging enough to keep you entertained. Don't be fooled by its apparent simplicity!
+### Health System
+A health system was integrated into the game, with the player starting with three hearts. The system reduces health upon collisions with enemies or traps, while hearts scattered throughout the level allow for health recovery. This mechanic is managed through the **Game Controller** script.
 
+### Enemy Behavior & Combat
+Enemy characters, including **giants** and **zombies**, were scripted with distinct behaviors. Giants require two hits to be defeated, while zombies cause the player to restart the level. Custom animations and particle effects, such as a blood splatter on collisions, were incorporated to enhance the visual experience.
 
-We downloaded the sprites used in this game from the https://craftpix.net/ website 
+### User Interface (UI)
+The game features a simple, intuitive UI to display the player’s coin count and health status. The menu system includes a **Main Menu** and a **Help Menu** created using Unity’s UI tools, with buttons linked to appropriate in-game actions via scripts.
 
+### Prefabs & Reusability
+Prefabs were created for all major game objects, including the player, enemies, and collectibles, allowing for easy expansion and reuse across the game. This modular approach ensures flexibility for future updates or additional levels.
 
+### Teleportation & Other Game Mechanics
+Special objects like teleportation buildings were introduced to provide players with a method of advancing through the game. The teleportation system is managed via scripts, offering dynamic progression while introducing new challenges.
 
-<h1>Description of the project construction process</h1>
+---
 
-In short, first we created the environment using tilemaps and the tile pallete window (also we created a clider for the ground and material to create and adjust the friction).
+## Assets & Visuals
 
-We used tags for the ground and the player, we also gave a name to the ground layer so that we can use it in scripts.
+Screenshots of various object settings, as well as detailed documentation, are available in the `Documents and Pictures` folder. These visuals provide insight into the design choices and technical configurations used throughout the development process.
 
-Then we set up the player and create animations and start coding for the player to move and jump. The player's problem was that it was slipping, and we solved this problem in the code by adding the desired scripts to find the player's physics and access the player's position and move it.
+---
 
-After completing the initial steps for collecting coins, we wrote a code for the chest, then we decided to include collecting hearts in our project.
+## Conclusion
 
-We had some challenges with the camera movement and decided to add two separate scripts, one to control and obtain the player's location and the other to move and follow the player.
+**The Leftovers** was developed to provide a challenging yet enjoyable 2D platforming experience. The project combines smooth player controls, dynamic enemy interactions, and engaging level design to create an immersive game. Despite some unresolved challenges in character animations and checkpoint systems, the final version offers a polished and exciting gameplay experience.
 
-We changed the order of placing the objects in the layers of the game using sprite renderer so that the background, player and other objects are organized and the background is placed in the last layer.
+Feedback and suggestions are always welcome to help improve future iterations!
 
-We considered three hearts for the player, which can be seen in the Scrip game controller, and after each hit, the player's heart object decreases.
+---
 
-After finishing the work of the player, we prepared a prefab of the player, and then proceeded to prepare prefabs of other game objects, such as giants, coins, etc., so that we can expand the environment.
+## How to Play
+1. Clone or download this repository.
+2. Open the project in Unity.
+3. Run the game through Unity’s Play mode or export a build for external play.
 
-To destroy the character, we made a blood mode using the particle system, which is executed after every encounter with zombies. 
-In the zombie script, we put a code to go and back, and in another script, we specified what point it should return to after hitting a zombie, and also how to give blood to the script to be displayed after the collision.
-
-We made scripts for teleport and other things.
-We added another object called bubble for the player so that he can destroy the giants with it. We wrote the attack script in the C# player file.
-
-We created a canvas to display the coins and hearts, we also created a sound for coins, spikes, hearts and shots.
-
-Using UI and Text Mesh Renderer, we created a menu in a new scene. We divided the menu into two sections, the main menu and the help menu, and using settings and scripts, we determined what would happen and what would be displayed by clicking on each button.
-
-
-
-<h1>Documents and Pictures folder</h1>
-We didn't know that it is necessary to share all the steps of making the game with you, but inside the Documents and Pictures folder, we put pictures of the settings of all the objects in the game. Unfortunately, at the last minute, we decided to change the part of the project that was related to checkpoints.
-
-Anyway, we enjoyed making the game with all the challenges we had. We had many challenges in the animation for characters, coins, and giants, and still some challenges remain unsolved. I hope you enjoy playing our game.:)
+Enjoy the adventure!
